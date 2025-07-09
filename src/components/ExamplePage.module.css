@@ -1,0 +1,306 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Header Styles */
+.header {
+  margin-bottom: 2rem;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.backButton:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.backIcon {
+  font-size: 1.25rem;
+}
+
+.titleSection {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111827;
+  margin: 0;
+}
+
+.badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.difficultyBadge,
+.statusBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid;
+}
+
+.difficultyFácil {
+  background-color: #f0fdf4;
+  color: #15803d;
+  border-color: #bbf7d0;
+}
+
+.difficultyMedio {
+  background-color: #fffbeb;
+  color: #b45309;
+  border-color: #fed7aa;
+}
+
+.difficultyDifícil {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+.statusPending {
+  background-color: #f3f4f6;
+  color: #374151;
+  border-color: #d1d5db;
+}
+
+.statusInprogress {
+  background-color: #fef3c7;
+  color: #92400e;
+  border-color: #fed7aa;
+}
+
+.statusCompleted {
+  background-color: #d1fae5;
+  color: #065f46;
+  border-color: #bbf7d0;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Implementation Section */
+.implementationSection {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.sectionIcon {
+  font-size: 1.75rem;
+}
+
+.implementationContainer {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  min-height: 400px;
+}
+
+/* Analysis Section */
+.analysisSection {
+  margin-bottom: 3rem;
+}
+
+.descriptionCard {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+.detailedDescription {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #374151;
+  margin: 0;
+}
+
+/* Conclusions Section */
+.conclusionsSection {
+  margin-bottom: 2rem;
+}
+
+.conclusionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.conclusionCard {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+.conclusionTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.conclusionIcon {
+  font-size: 1.25rem;
+}
+
+.conclusionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.conclusionItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  border-left: 3px solid #e5e7eb;
+}
+
+.proItem {
+  background-color: #f0fdf4;
+  border-left-color: #22c55e;
+}
+
+.proItem .bulletPoint {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.conItem {
+  background-color: #fef2f2;
+  border-left-color: #ef4444;
+}
+
+.conItem .bulletPoint {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.bulletPoint {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #6b7280;
+  flex-shrink: 0;
+  width: 20px;
+  text-align: center;
+}
+
+.conclusionText {
+  flex: 1;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    padding: 1rem;
+  }
+
+  .titleRow {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .badges {
+    align-self: flex-start;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .conclusionsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .implementationContainer {
+    padding: 1rem;
+  }
+
+  .conclusionCard {
+    padding: 1rem;
+  }
+
+  .descriptionCard {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleSection {
+    padding: 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.25rem;
+  }
+
+  .conclusionItem {
+    padding: 0.75rem;
+  }
+}
