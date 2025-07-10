@@ -13,7 +13,6 @@ interface ExamplePageProps {
   status: StatusEnum;
   children: React.ReactNode; // El componente del ejemplo de calendario
   conclusions: {
-    keyPoints: string[];
     detailedDescription: string;
     pros: string[];
     cons: string[];
@@ -48,34 +47,6 @@ const ExamplePage: React.FC<ExamplePageProps> = ({
             <span className={styles.backIcon}>←</span>
             Volver
           </Link>
-
-          <div className={styles.titleSection}>
-            <div className={styles.titleRow}>
-              <h1 className={styles.title}>{title}</h1>
-              <div className={styles.badges}>
-                <span
-                  className={`${styles.difficultyBadge} ${
-                    styles[`difficulty${difficulty}`]
-                  }`}
-                >
-                  {difficulty}
-                </span>
-                <span
-                  className={`${styles.statusBadge} ${
-                    styles[
-                      `status${
-                        status.charAt(0).toUpperCase() +
-                        status.slice(1).replace("-", "")
-                      }`
-                    ]
-                  }`}
-                >
-                  {getStatusText(status)}
-                </span>
-              </div>
-            </div>
-            <p className={styles.description}>{description}</p>
-          </div>
         </div>
 
         {/* Sección de implementación */}
@@ -108,22 +79,6 @@ const ExamplePage: React.FC<ExamplePageProps> = ({
           </h2>
 
           <div className={styles.conclusionsGrid}>
-            {/* Conclusiones Clave */}
-            <div className={styles.conclusionCard}>
-              <h3 className={styles.conclusionTitle}>
-                <span className={styles.conclusionIcon}>💡</span>
-                Conclusiones Clave
-              </h3>
-              <div className={styles.conclusionsList}>
-                {conclusions.keyPoints.map((point, index) => (
-                  <div key={index} className={styles.conclusionItem}>
-                    <span className={styles.bulletPoint}>•</span>
-                    <span className={styles.conclusionText}>{point}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
             {/* Puntos a Favor */}
             <div className={styles.conclusionCard}>
               <h3 className={styles.conclusionTitle}>

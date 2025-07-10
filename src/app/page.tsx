@@ -49,7 +49,7 @@ const calendarExamples: CalendarExample[] = [
     href: Routes.MinaScheduler,
     icon: "💻",
     status: StatusEnum.Pending,
-    difficulty: DifficultyEnum.Medium,
+    difficulty: DifficultyEnum.Hard,
   },
   {
     title: "Calendario Personalizado",
