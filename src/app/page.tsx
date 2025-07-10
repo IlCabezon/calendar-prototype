@@ -48,7 +48,7 @@ const calendarExamples: CalendarExample[] = [
       "Implementación de calendario personalizable y flexible para React que permite gestionar y mostrar eventos en vistas de día, semana o mes.",
     href: Routes.MinaScheduler,
     icon: "💻",
-    status: StatusEnum.Pending,
+    status: StatusEnum.Completed,
     difficulty: DifficultyEnum.Hard,
   },
   {
