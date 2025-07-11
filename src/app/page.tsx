@@ -31,7 +31,7 @@ const calendarExamples: CalendarExample[] = [
     description: "Usando la librería react-big-calendar",
     href: Routes.ReactBigCalendar,
     icon: "📖",
-    status: StatusEnum.Pending,
+    status: StatusEnum.Completed,
     difficulty: DifficultyEnum.Medium,
   },
   {

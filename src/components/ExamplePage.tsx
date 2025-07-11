@@ -3,14 +3,8 @@
 import type React from "react";
 import styles from "./ExamplePage.module.css";
 import Link from "next/link";
-import { DifficultyEnum } from "@/enums/difficulty.enum";
-import { StatusEnum } from "@/enums/status.enum";
 
 interface ExamplePageProps {
-  title: string;
-  description: string;
-  difficulty: DifficultyEnum;
-  status: StatusEnum;
   children: React.ReactNode; // El componente del ejemplo de calendario
   conclusions: {
     detailedDescription: string;
@@ -19,25 +13,7 @@ interface ExamplePageProps {
   };
 }
 
-const ExamplePage: React.FC<ExamplePageProps> = ({
-  title,
-  description,
-  difficulty,
-  status,
-  children,
-  conclusions,
-}) => {
-  const getStatusText = (status: string): string => {
-    switch (status) {
-      case "completed":
-        return "Completado";
-      case "in-progress":
-        return "En Progreso";
-      default:
-        return "Pendiente";
-    }
-  };
-
+const ExamplePage: React.FC<ExamplePageProps> = ({ children, conclusions }) => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>

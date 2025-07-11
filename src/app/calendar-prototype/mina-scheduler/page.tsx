@@ -2,12 +2,11 @@
 
 import React from "react";
 import ExamplePage from "@/components/ExamplePage";
-import { DifficultyEnum } from "@/enums/difficulty.enum";
-import { StatusEnum } from "@/enums/status.enum";
 
 const MinaSchedulerPage: React.FC = () => {
   const conclusions = {
-    detailedDescription: "Mina Scheduler es una librería de calendario para React que permite crear calendarios personalizables y flexibles. Ofrece vistas de día, semana y mes, y permite gestionar eventos de manera sencilla. Aunque es compatible con Next.js 14, presenta algunos problemas de instalación y vulnerabilidades en sus dependencias.",
+    detailedDescription:
+      "Mina Scheduler es una librería de calendario para React que permite crear calendarios personalizables y flexibles. Ofrece vistas de día, semana y mes, y permite gestionar eventos de manera sencilla. Aunque es compatible con Next.js 14, presenta algunos problemas de instalación y vulnerabilidades en sus dependencias.",
     pros: [
       "Compatible con las version 14.~ de Next.js",
       "Utiliza tailwindcss para estilos",
@@ -26,13 +25,7 @@ const MinaSchedulerPage: React.FC = () => {
   };
 
   return (
-    <ExamplePage
-      title="Mina Scheduler"
-      description="A customizable and flexible calendar component for React using Next UI."
-      difficulty={DifficultyEnum.Medium}
-      status={StatusEnum.Pending}
-      conclusions={conclusions}
-    >
+    <ExamplePage conclusions={conclusions}>
       <MinaSchedulerComponent />
     </ExamplePage>
   );
